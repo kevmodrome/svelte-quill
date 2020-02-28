@@ -1,7 +1,8 @@
 import Quill from "quill";
 
-export function quill(node) {
-  const quill = new Quill(node, {
+export function quill(
+  node,
+  options = {
     modules: {
       toolbar: [
         [{ header: [1, 2, 3, false] }],
@@ -11,7 +12,9 @@ export function quill(node) {
     },
     placeholder: "Type something...",
     theme: "snow" // or 'bubble'
-  });
+  }
+) {
+  const quill = new Quill(node, options);
 
   quill.on("text-change", function(delta, oldDelta, source) {
     node.dispatchEvent(
