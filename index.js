@@ -1,4 +1,4 @@
-const Quill = require(quill);
+import Quill from "quill";
 
 export function quill(node, options) {
   const quill = new Quill(node, {
