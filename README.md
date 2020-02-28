@@ -68,26 +68,3 @@ Here is an example:
 	<link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 </svelte:head>
 ```
-
-You can style a component by overriding [the available CSS variables](/docs/theming_variables.md).
-
-```html
-<script>
-  import Select from "svelte-select";
-
-  const items = ["One", "Two", "Three"];
-</script>
-
-<style>
-  .themed {
-    --border: 3px solid blue;
-    --borderRadius: 10px;
-    --placeholderColor: blue;
-  }
-</style>
-
-<div class="themed">
-  <h2>Theming</h2>
-  <select {items}></select>
-</div>
-```
