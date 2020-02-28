@@ -5,12 +5,6 @@
 
 A package that contains a single action to be used on an element where you want to use quill.
 
-...
-
-# svelte-select
-
-A select/autocomplete component for Svelte apps. With support for grouping, filtering, async and more.
-
 ## Demos
 
 [🌱 Simple demo](https://svelte.dev/repl/0cc84ebc0b114dd7ab5b20b87bbee486?version=3.19.1)
