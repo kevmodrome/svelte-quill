@@ -1,6 +1,7 @@
 {
   "name": "svelte-quill",
-  "version": "1.1.0",
+  "version": "1.1.1",
+  "type": "module",
   "description": "A package that contains a single action to be used on an element where you want to use quill.",
   "license": "MIT",
   "keywords": [
