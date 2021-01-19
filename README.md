@@ -32,6 +32,23 @@ Simply use the action and listen to events using the `text-change` event. The ev
 <div class="editor" use:quill={options} on:text-change={e => content =
 e.detail}/>
 ```
+Or to retrieve the quill instance to make direct API calls:
+```html
+<script>
+  import { quill } from "svelte-quill";
+
+  const options = { ... }
+  var quillInstance;
+  onMount(()=>{
+		const editorDiv = document.getElementById("editor")
+		quillInstance = quill(editorDiv, options)
+		quillInstance.setText("Hello World")
+	})
+</script>
+
+<div id="editor"/>
+```
+
 
 ## Options
 
