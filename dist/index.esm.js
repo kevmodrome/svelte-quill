@@ -1,7 +1,7 @@
 import Quill from 'quill';
 
 function quill(node, options) {
-  const quill = new Quill(node, {
+  const quillInstance = new Quill(node, {
     modules: {
       toolbar: [
         [{ header: [1, 2, 3, false] }],
@@ -15,16 +15,17 @@ function quill(node, options) {
   });
   const container = node.getElementsByClassName("ql-editor")[0];
 
-  quill.on("text-change", function(delta, oldDelta, source) {
+  quillInstance.on("text-change", function(delta, oldDelta, source) {
     node.dispatchEvent(
       new CustomEvent("text-change", {
         detail: {
           html: container.innerHTML,
-          text: quill.getText()
+          text: quillInstance.getText()
         }
       })
     );
   });
+  return quillInstance;
 }
 
 export { quill };
