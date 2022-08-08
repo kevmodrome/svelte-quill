@@ -4,6 +4,8 @@
   "type": "module",
   "description": "A package that contains a single action to be used on an element where you want to use quill.",
   "license": "MIT",
+  "homepage": "https://github.com/kevmodrome/svelte-quill#readme"
+  "repository": "github:kevmodrome/svelte-quill",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "browser": "dist/index.umd.js",
